@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.istyrachmiw.isty_1202154299_modul2.DineIn">
+
+    <TextView
+        android:id="@+id/detailcust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Detail Customer  :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailcust"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/nomeja0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="30dp"
+        android:text="No. Meja  :"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/nomeja"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nomeja0"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/nomeja0"
+        android:entries="@array/nomeja"/>
+
+    <Button
+        android:id="@+id/pilihpesanan"
+        android:onClick="makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Pilih Pesanan" />
+
+</RelativeLayout>

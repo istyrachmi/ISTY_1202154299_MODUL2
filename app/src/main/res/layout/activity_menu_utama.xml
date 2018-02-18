@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.istyrachmiw.isty_1202154299_modul2.MenuUtama">
+
+    <ImageView
+        android:id="@+id/rnb"
+        android:layout_width="400sp"
+        android:layout_height="250sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/resto" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Pilih Menu  : "
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/konv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:paddingTop="20sp"
+        android:gravity="">
+
+        <RadioButton
+            android:id="@+id/dinein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/konv"
+            android:layout_marginTop="27dp"
+            android:text="Dine In"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/takeaway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dinein"
+            android:layout_below="@+id/dinein"
+            android:layout_marginTop="20dp"
+            android:text="Take Away"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/konv"
+        android:layout_marginTop="30dp"
+        android:onClick="proses"
+        android:text="Pesan Sekarang"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
